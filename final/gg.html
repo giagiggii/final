@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreddy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--верхняя часть сайта-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ingreddy</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('recipes')">Recipes</a></li>
+            </ul>
+            <button class="submit-btn">Submit Recipe</button>
+        </nav>
+    </header>
+
+    <!-- вкладка Home-->
+    <section id="home" class="section">
+        <div class="banner">
+            <div class="banner-content">
+                <h1>Find the best ingredients for your recipe</h1>
+                <p>Cooking is not just an everyday routine, it is a real art, where each ingredient is a tool for creating a small masterpiece. Remember that even the simplest dish becomes special when you cook with soul.</p>
+                <div class="banner-buttons">
+                    <button class="btn">Cooking Right</button>
+                    <button class="btn">Discover Recipe</button>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="images/spaghetti.jpg" alt="Delicious spaghetti">
+            </div>
+        </div>
+
+<!--Weekly Recipe Roundup Section -->
+        <section class="weekly-recipes">
+            <h2>Weekly Recipe Roundup</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <img src="images/italian.jpg" alt="Italian Cuisine">
+                    <h3>Italian Cuisine</h3>
+                    <p>Italian cuisine is a symphony of flavors where simplicity is combined with sophistication.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/pizza.jpg" alt="Hot And Fresh Pizza">
+                    <h3>Hot And Fresh Out Of The Oven</h3>
+                    <p>Freshly baked goods with a crispy crust, soft texture, and aromatic steam turn every bite into a celebration.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/burger.jpg" alt="Juicy Burger">
+                    <h3>Juicy And Satisfying</h3>
+                    <p>Each bite, bursting with flavor and moisture, delivers comfort and joy, leaving you craving more.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/meat.jpg" alt="Meat Food">
+                    <h3>Meat Food</h3>
+                    <p>"Meat Food" embodies hearty flavors and rich satisfaction, crafted to nourish and delight.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/salad.jpg" alt="Salads">
+                    <h3>Salads</h3>
+                    <p>Salads are fresh, flavorful, and nourishing – a perfect balance of health and taste.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/kazakh.jpg" alt="Kazakh Cuisine">
+                    <h3>Kazakh Cuisine</h3>
+                    <p>A rich blend of tradition and flavor, featuring hearty meats, fresh dairy, and warm hospitality.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+            </div>
+        </section>
+
+<!--Recipes By Categories Section -->
+        <section class="categories">
+            <h2>Recipes By Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/seafood.jpg" alt="Sea Food">
+                    <h3>Sea Food</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/italian.jpg" alt="Italian Food">
+                    <h3>Italian Food</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/asian.jpg" alt="Asian Food">
+                    <h3>Asian Food</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/fastfood.jpg" alt="Fast Food">
+                    <h3>Fast Food</h3>
+                </div>
+            </div>
+        </section>
+
+<!-- Download App Section -->
+        <section class="download-app">
+            <div class="app-content">
+                <h2>Top Mobile Application</h2>
+                <h3>Download Our App</h3>
+                <img src="images/appstore.png" alt="App Store">
+            </div>
+            <div class="app-image">
+                <img src="images/kitchen.jpg" alt="Cooking in kitchen">
+            </div>
+        </section>
+
+<!-- Community Stats Section -->
+        <section class="community-stats">
+            <h2>Join a Worldwide Network of Influencers and Like-Minded Individuals</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <h3>1500</h3>
+                    <p>Original Recipes</p>
+                </div>
+                <div class="stat">
+                    <h3>2000</h3>
+                    <p>Fantastic Participants</p>
+                </div>
+                <div class="stat">
+                    <h3>2000</h3>
+                    <p>Contentment Level</p>
+                </div>
+            </div>
+        </section>
+
+<!-- Customer Reviews Section -->
+        <section class="customer-reviews">
+            <h2>From Our Customers</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>The app is incredible! Simple recipes, step-by-step instructions and inspiring photos make cooking easy and enjoyable. Great tips on ingredients - cooking with confidence!</p>
+                    <span>Alice Holland</span>
+                </div>
+                <div class="review-card">
+                    <p>Great app with lots of recipes. High-quality design, convenient bookmarks make cooking easier and more enjoyable. I recommend!</p>
+                    <span>Kevin Fisher</span>
+                </div>
+                <div class="review-card">
+                    <p>An excellent interface, detailed recipes and convenient bookmarks make cooking easier and more enjoyable. The app fully meets my culinary needs!</p>
+                    <span>Marilyn Hughes</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+<!-- Recipes отдельная секция -->
+    <section id="recipes" class="section" style="display: none;">
+        <div class="recipes">
+            <section class="recipes-header">
+                <h1>Recipes</h1>
+                <p>
+                    Cooking is not just a necessity, but an art we create with our hands. Each new recipe is a chance to express ourselves, surprise loved ones, and explore new flavors.
+                </p>
+            </section>
+        
+            <section class="recipe-cards">
+                <div class="recipe-card">
+                    <img src="images/italian.jpg" alt="Italian Cuisine">
+                    <h3>Italian Cuisine</h3>
+                    <p>Italian cuisine is a symphony of flavors where simplicity is combined with sophistication.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/pizza.jpg" alt="Hot And Fresh Pizza">
+                    <h3>Hot And Fresh Out Of The Oven</h3>
+                    <p>Freshly baked goods with a crispy crust, soft texture, and aromatic steam turn every bite into a celebration.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/burger.jpg" alt="Juicy Burger">
+                    <h3>Juicy And Satisfying</h3>
+                    <p>Each bite, bursting with flavor and moisture, delivers comfort and joy, leaving you craving more.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/meat.jpg" alt="Meat Food">
+                    <h3>Meat Food</h3>
+                    <p>"Meat Food" embodies hearty flavors and rich satisfaction, crafted to nourish and delight.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/salad.jpg" alt="Salads">
+                    <h3>Salads</h3>
+                    <p>Salads are fresh, flavorful, and nourishing – a perfect balance of health and taste.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/kazakh.jpg" alt="Kazakh Cuisine">
+                    <h3>Kazakh Cuisine</h3>
+                    <p>A rich blend of tradition and flavor, featuring hearty meats, fresh dairy, and warm hospitality.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/soup.jpg" alt="Soups">
+                    <h3>Soups</h3>
+                    <p>"Soups" are warm, comforting, and full of flavor – a perfect blend of nourishment and delight.</p>
+                    <button class="btn">Recipe</button>
+                </div>
+            </section>
+            <div class="search-section">
+                <h2>Find What You Want</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="write" class="search-input">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+<!-- Footer черная часть внизу-->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Organisation</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Interesting Links</h3>
+                <ul>
+                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: (707) 507-5127</li>
+                    <li>Email: ingreddy@kbtu.kz</li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Ingreddy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
